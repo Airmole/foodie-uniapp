@@ -9,7 +9,7 @@
 		<view class="cu-list menu-avatar cu-card" v-if="dataList.length > 0">
 		    <view class="cu-item" v-for="(item,index) in dataList" :key="index" @click="clickItem(item)">
 		        <view class="cu-avatar lg">
-					<image @click.native.stop="clickImage(index)" class="cu-avatar lg" :src="item.thumb ? item.thumb : item.image" mode="scaleToFill" :show-menu-by-longpress="true"></image>
+					<image @click.native.stop="clickImage(index)" class="cu-avatar lg" :src="item.thumb ? item.thumb : (item.image+'?imageMogr2/auto-orient/strip%7CimageView2/2/w/360')" mode="scaleToFill" :show-menu-by-longpress="true"></image>
 				</view>
 		        <view class="content">
 		            <view class="text-grey text-sm flex">
